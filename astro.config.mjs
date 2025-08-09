@@ -7,15 +7,13 @@ import compress from "@playform/compress";
 import AutoImport from "astro-auto-import";
 import react from "@astrojs/react";
 import keystatic from "@keystatic/astro";
-import netlify from "@astrojs/netlify";
+
 import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
 	site: "https://stellar.cosmicthemes.com",
-	adapter: netlify({
-		imageCDN: false,
-	}),
+
 	redirects: {
 		"/admin": "/keystatic",
 	},
