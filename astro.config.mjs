@@ -13,7 +13,10 @@ import icon from "astro-icon";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://stellar.cosmicthemes.com",
-
+	adapter: {
+		type: "@astrojs/cloudflare",
+		name: "cloudflare"
+	},
 	redirects: {
 		"/admin": "/keystatic",
 	},
